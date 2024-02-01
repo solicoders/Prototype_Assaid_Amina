@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->date('date_creation');
             $table->date('date_modification');
-            $table->string('reference')->unique();
+            $table->string('reference');
             $table->string('nom');
             $table->string('code_postal');
             $table->timestamps();
