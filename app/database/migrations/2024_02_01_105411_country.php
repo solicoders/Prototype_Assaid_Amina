@@ -9,16 +9,24 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
-        //
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->date('date_creation');
+            $table->date('date_modification');
+            $table->string('reference')->unique();
+            $table->string('nom');
+            $table->string('capital'); // assuming this is the correct column name
+            $table->timestamps();
+        });
     }
 
     /**
      * Reverse the migrations.
      */
-    public function down(): void
+    public function down()
     {
-        //
+        Schema::dropIfExists('users');
     }
 };
