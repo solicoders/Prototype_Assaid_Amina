@@ -1,4 +1,4 @@
 # MLD sous la forme suivant 
 
-  - Country (Id,Nom,Capital,..)
-  - City (Id,Nom,code postal,...)
+  - Country (Id, Date de création , Date de modification , Référence ,Nom,Capital,..)
+  - City (Id, Date de création , Date de modification , Référence , Nom,code postal,...)
